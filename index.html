@@ -1,0 +1,28 @@
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<form>
+	<label for="dob1">Person 1</label>
+	<input type="date" name="dob1" id="dob1" onkeypress="inputKeypress(event)" value="1993-04-17">
+
+	<br/><br/>
+
+	<label for="dob2">Person 2</label>
+	<input type="date" name="dob2" id="dob2" onkeypress="inputKeypress(event)" value="1997-08-30">
+	<button onclick="updateDates()" id="updateButton" type="button">Update</button>
+</form>
+
+<div>
+	<p><strong>Current Age:</strong> <span id="totalAge"></span></p>
+</div>
+
+<div id="birthdays">
+</div>
+
+
+<script src="moment.js"></script>
+<script src="main.js"></script>
+</body>
